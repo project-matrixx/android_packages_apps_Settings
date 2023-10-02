@@ -49,7 +49,8 @@
         android:key="lineage_version"
         android:title="@*lineageos.platform:string/lineage_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
     <!-- Matrixx maintainer  -->
@@ -57,7 +58,8 @@
         android:key="matrixx_maintainer"
         android:title="@string/matrixx_maintainer_title"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
+        android:selectable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MatrixxMaintainerPreferenceController"/>
 
     <!-- Security patch -->
