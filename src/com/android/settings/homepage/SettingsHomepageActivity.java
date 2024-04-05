@@ -1018,10 +1018,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         }
     }
 
-    private String getOwnerName(){
+    private String getOwnerName() {
         final UserManager mUserManager = getSystemService(UserManager.class);
         final UserInfo userInfo = com.android.settings.Utils.getExistingUser(mUserManager,
-                    UserHandle.of(UserHandle.myUserId()));
-        return userInfo.name != null ? userInfo.name : getString(R.string.default_user);
+        UserHandle.of(UserHandle.myUserId()));
+        String fullName = userInfo.name != null ? userInfo.name : getString(R.string.default_user);
+        String[] nameParts = fullName.split("\\s+");
+        if (nameParts.length > 0) {
+           return nameParts[0];
+        } else {
+           return getString(R.string.default_user);
+        }
     }
 }

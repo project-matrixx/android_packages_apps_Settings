@@ -536,6 +536,6 @@
     <dimen name="zen_mode_circular_icon_text_size">18dp</dimen>
 
     <!-- Header Messages -->
-    <dimen name="header_text_size_contextual">34sp</dimen>
-    <dimen name="header_text_size_default">40sp</dimen>
+    <dimen name="header_text_size_contextual">22sp</dimen>
+    <dimen name="header_text_size_default">32sp</dimen>
 </resources>
