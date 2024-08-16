@@ -25,14 +25,13 @@
         android:title="@string/display_engine_category"
         android:order="100">
 
-        <com.crdroid.settings.preferences.SecureSettingListPreference
+        <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
             android:key="display_engine_mode"
             android:title="@string/display_engine_mode_title"
-            android:entries="@array/display_engine_mode_entries"
-            android:entryValues="@array/display_engine_mode_values"
-            android:summary="%s"
             android:defaultValue="0"
-            settings:position="none" />
+            android:max="3"
+            settings:min="0"
+            settings:interval="1"/>
 
         <com.android.settingslib.widget.FooterPreference
             android:key="display_engine_mode_footer"
