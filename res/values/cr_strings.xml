@@ -32,4 +32,7 @@
     <string name="matrixx_maintainer_title">Device maintainer</string>
     <string name="matrixx_maintainer">Unknown</string>
 
+    <!-- Long press navbar to search -->
+    <string name="navbar_long_press_gesture_title">Long press to search</string>
+    <string name="navbar_long_press_gesture_summary">Touch and hold the Home button or the navigation handle to search using the content on your screen</string>
 </resources>
