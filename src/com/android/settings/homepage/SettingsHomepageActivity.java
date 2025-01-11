@@ -881,7 +881,12 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     }
 
     private Drawable getCircularUserIcon(Context context) {
-    	final UserManager mUserManager = getSystemService(UserManager.class);
+        if (context == null) {
+            Log.e(TAG, "Context is null while getting user icon. Using application context.");
+            context = getApplicationContext();
+        }
+    
+        final UserManager mUserManager = getSystemService(UserManager.class);
         Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
 
         if (bitmapUserIcon == null) {
