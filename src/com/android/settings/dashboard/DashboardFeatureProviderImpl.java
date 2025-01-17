@@ -457,8 +457,8 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             return;
         }
         // Tint homepage icons
-        if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
-            if (iconPackage.equals(WELLBEING_PACKAGE) && iconDrawable instanceof LayerDrawable
+        if (tile != null && TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
+            if (iconPackage != null && iconPackage.equals(WELLBEING_PACKAGE) && iconDrawable instanceof LayerDrawable
                     && ((LayerDrawable) iconDrawable).getDrawable(1) != null) {
                 iconDrawable = ((LayerDrawable) iconDrawable).getDrawable(1);
                 iconDrawable.mutate();
