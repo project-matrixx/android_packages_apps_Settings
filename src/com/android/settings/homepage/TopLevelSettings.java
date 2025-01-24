@@ -260,6 +260,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             	|| key.equals("top_level_privacy")
             	|| key.equals("top_level_safety_center")
             	|| key.equals("top_level_storage")
+                || key.equals("top_level_wallpaper")
             	|| key.equals("top_level_wellbeing")
             	|| key.equals("top_level_notifications")){
                 preference.setLayoutResource(R.layout.matrixx_dashboard_preference_middle);
