@@ -264,8 +264,12 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             	|| key.equals("top_level_wellbeing")
             	|| key.equals("top_level_notifications")){
                 preference.setLayoutResource(R.layout.matrixx_dashboard_preference_middle);
-            } else if ("top_level_google".equals(key)){
-                preference.setLayoutResource(R.layout.matrixx_dashboard_preference_google);
+            } else if (key.equals("top_level_google")){
+                if (gAppsExists && screen.findPreference("dashboard_tile_pref_com.google.android.gms.backup.component.BackupOrRestoreSettingsActivity") != null) {
+                    preference.setLayoutResource(R.layout.matrixx_dashboard_preference_google_v2);
+                }  else {
+                    preference.setLayoutResource(R.layout.matrixx_dashboard_preference_google);
+                }
             } else if (key.equals("top_level_accounts") && gAppsExists){
                 preference.setLayoutResource(R.layout.matrixx_dashboard_preference_middle);
             } else if (key.equals("top_level_crdroid")) {
