@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+  <path
+      android:pathData="M33.6,208.83C27.07,200.38 21.75,190.95 17.89,180.8L89.86,91.62L119.99,132.28L120,132.26L120.01,132.28L150.14,91.62L222.11,180.8C217.79,192.18 211.62,202.65 203.97,211.84L148.82,138.12L120,171.93L91.17,138.12L33.6,208.83Z"
+      android:fillColor="?android:attr/colorAccent"/>
+  <path
+      android:pathData="M17.89,176.02C13.33,164 10.83,150.95 10.83,137.33C10.83,77.07 59.75,28.16 120,28.16C180.26,28.16 229.17,77.07 229.17,137.33C229.17,150.95 226.67,164 222.11,176.02L204.68,154.43C205.79,148.9 206.38,143.18 206.38,137.33C206.38,89.66 167.67,50.95 120,50.95C72.33,50.95 33.62,89.66 33.62,137.33C33.62,143.18 34.21,148.9 35.32,154.43L17.89,176.02Z"
+      android:fillColor="@*android:color/system_accent1_400"/>
+</vector>

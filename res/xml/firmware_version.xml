@@ -22,9 +22,10 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Matrixx logo -->
     <com.android.settingslib.widget.LayoutPreference
-        android:key="matrixx_about"
-        android:layout="@layout/matrixx_about"
+        android:key="matrixx_logo_about"
+        android:layout="@layout/matrixx_logo_about"
         android:selectable="false"/>
 
     <!-- Device name -->
