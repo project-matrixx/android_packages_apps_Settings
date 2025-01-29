@@ -30,4 +30,6 @@
 
     <!-- Matrixx maintainer -->
     <string name="matrixx_maintainer_title">Device maintainer</string>
+    <string name="matrixx_maintainer">Unknown</string>
+
 </resources>
