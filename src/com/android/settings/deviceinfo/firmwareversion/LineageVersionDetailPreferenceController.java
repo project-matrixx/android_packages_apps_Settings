@@ -47,6 +47,7 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
     private static final String KEY_MATRIXX_DEVICE_PROP = "ro.matrixx.device";
     private static final String KEY_MATRIXX_RELEASE_TYPE_PROP = "ro.matrixx.release.type";
     private static final String KEY_MATRIXX_RELEASE_VERSION_PROP = "ro.matrixx.display.version";
+    private static final String KEY_MATRIXX_RELEASE_CODE_PROP = "ro.matrixx.release.code";
     private static final String KEY_MATRIXX_VARIANT_PROP = "ro.matrixx.build.variant";
 
     private static final String PLATLOGO_PACKAGE_NAME = "com.android.egg";
@@ -132,7 +133,9 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
                 this.mContext.getString(R.string.device_info_default));
         String romVariant = SystemProperties.get(KEY_MATRIXX_VARIANT_PROP,
                 this.mContext.getString(R.string.device_info_default));
-        String shortVersion = romVersion + " | " + romReleasetype + " | " + romVariant;
+	String romReleaseCode = SystemProperties.get(KEY_MATRIXX_RELEASE_CODE_PROP,
+                this.mContext.getString(R.string.device_info_default));
+        String shortVersion = romVersion + " | " + romReleaseCode + " | " + romReleasetype + " | " + romVariant;
         return shortVersion;
     }
 
