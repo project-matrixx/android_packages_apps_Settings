@@ -106,6 +106,12 @@
         android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
         settings:keywords="@string/keywords_battery_info"/>
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="arcane_idle_manager"
+        android:title="@string/idle_manager_title"
+        android:summary="@string/idle_manager_summary"
+        android:defaultValue="false" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"
