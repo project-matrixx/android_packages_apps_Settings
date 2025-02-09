@@ -27,7 +27,7 @@
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
         <item name="android:layout_marginBottom">@dimen/homepage_title_margin_bottom</item>
         <item name="android:layout_marginHorizontal">@dimen/homepage_title_margin_horizontal</item>
-        <item name="android:textSize">35sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -37,7 +37,7 @@
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
         <item name="android:layout_marginBottom">@dimen/homepage_title_margin_bottom</item>
         <item name="android:layout_marginHorizontal">@dimen/homepage_title_margin_horizontal</item>
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:fontWeight">500</item>
     </style>
 </resources>
